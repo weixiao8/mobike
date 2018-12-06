@@ -1,15 +1,76 @@
-html,body,.swiper-container{width: 100%;height:100%}
+html,body,.swiper-container{width:100%;height:100%}
 .swiper-slide{background:51% 44% no-repeat;background-size:cover;}
-.container-md{width:1040px;padding: 0 20px;margin:auto;height:100%;background:greenyellow;z-index: 3}
+.container-md{width:1040px;padding: 0 20px;margin:auto;height:100%;z-index:3;}
 .wrap{width: 100%;height: 100%;position:relative}
 .wrap .header,.wrap .title,.wrap .news{width: 100%;position:absolute;left:0;z-index:9}
-.wrap .header{;height: 80px;top:0;}
-.wrap .title{;top:50%;height:146px;margin-top: -73px}
-.wrap .news{bottom:0;height:42px}
+.wrap .header{;height:80px;top:0;}
+.header .navs{height: 80px;padding:15px 0;margin: 0 20px;box-sizing: border-box}
+.header .nav{float: left;}
+.header .svg{display:block;line-height:1px;height:56px;padding: 8px 20px;box-sizing:border-box;}
+.header .svg svg{margin-bottom:-1px}
+.header .header-links{float:right}
+.header .header-links li{display:inline-block;}
+.header .header-links li a{display:block;width:100%;padding: 8px 20px;color:#fff;font-size:16px;box-sizing:border-box;}
+
+
+.wrap .title{top:50%;margin-top:-73px}
+.title h1{font-size: 500%;font-weight: bold;line-height: 1;margin:0 0 20px -2px;box-sizing: border-box}
+.title a{display: block;background:rgba(0,0,0,.6);color:#ffff;font-size:22px;padding: 14px 25px;width: 220px;border-radius: 6px}
+.wrap .news{bottom:0;}
+.news a{display: block;color: #fff;line-height: 1.4}
+.news a .news-left{float: left;font-size:14px;padding: 0 8px;background: linear-gradient(to bottom, #ec614f 0%, #ff2e2e 100%);border-radius: 4px;box-sizing: border-box;margin-top:4px}
+.news a .news-right{float: left;margin-left:8px;font-size:16px;}
+.news-right-text{margin-bottom:10px}
+
+
+
 .hero-promos{margin-left: -2px}
 .hero-promo{width: 25%;float: left;border-left:2px solid #fff;border-top:2px solid #fff;box-sizing: border-box}
 .hero-promo a {width: 100%;display: block;height: 240px;background:no-repeat center center;
     background-size: cover;text-align: center;font-size: 24px;color: #fff;padding-top: 20px;}
 
-.meta-links{padding: 45px 0;height:50px}
+.meta-links{padding: 45px 0;box-sizing: border-box}
 .meta-link {width:33.33%;float:left;height: 100%}
+.meta-link .pic{width: 50px;height: 50px;;display: inline-block;vertical-align: middle;margin-right: 15px}
+.meta-link .pic img{height: 100%;display:block;}
+.meta-link .text{display: inline-block;font-weight:300;font-size: 16px;vertical-align: middle}
+.meta-link .text h4{font-weight: 400;text-align:left}
+
+.footer{ height: 245px;  border: 1px solid #eee}
+.footer-box{width: 100%;height: 100%;padding: 45px 0;box-sizing: border-box}
+.footer-left{font-weight:400;width:37.33%;height: 100%;z-index: 10;float:left;margin-right:40px}
+.footer-left li{width: 100%;line-height:4.3;height:25%;font-size:16px}
+.footer-left li .footerlogo{display:block;width:160px;height:100%;background:no-repeat center center;background-size:contain;
+margin-bottom:10px;color:#000;font-size: 16px}
+.footer-left li a{color: #000000}
+.footer-right{width:58%;height:100%;z-index: 10;float: left;}
+.footer-right li{height:100%;font-size:15px;float: right;
+    margin-left:122px}
+.footer-right li dt{font-weight: bold;display: block;margin-bottom: 10px;font-size:16px;}
+.footer-right li dd a{color:#000;font-weight:300}
+.footer-right li dl{line-height:2;height:25%;}
+
+.copymain{padding: 45px 0; box-sizing: border-box;margin-bottom: 50px}
+.copy-left {font-size: 12px;color: #aaa;margin-top: 4px;float: left;line-height: 30px}
+.copy-left i{display: inline-block;width: 15px;height: 15px;
+        vertical-align: -3px;
+    background-repeat: no-repeat;
+    background-size: contain}
+.copy-icon{width: 60px;float: right;
+    height: 58px;}
+.copy-icon img{display:block;width: 40px;
+    height: 40px;margin: 20px 10px;}
+
+@media screen and (max-width: 1080px){
+    .container-md{width:100%;box-sizing: border-box}
+    .hero-promo{width: 50%}
+    .footer-right {display: block}
+    .footer-right li{width: 25%;margin: 0}
+    .copymain{padding-top: 150px}
+
+}
+@media screen and (max-width: 640px) {
+    .hero-promo{width: 100%;}
+    .meta-link{width: 100%;text-align: left!important;
+        height: 60px;}
+}
